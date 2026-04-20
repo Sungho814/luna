@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Luna Skin Clinic</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Skin Clinic — Your Best Skin Awaits</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ───────────── NAVIGATION ───────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-moon">☽</span>
+      <span class="nav__logo-text">Luna Skin Clinic</span>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#services" class="nav__link">Services</a></li>
+      <li><a href="#process" class="nav__link">Process</a></li>
+      <li><a href="#gallery" class="nav__link">Gallery</a></li>
+      <li><a href="#testimonials" class="nav__link">Reviews</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+      <li><a href="#booking" class="nav__link nav__link--cta">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- ───────────── HERO ───────────── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-orb hero__bg-orb--1"></div>
+    <div class="hero__bg-orb hero__bg-orb--2"></div>
+    <div class="hero__bg-orb hero__bg-orb--3"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-fade">Premium Skin Care Clinic</p>
+      <h1 class="hero__headline reveal-up">
+        Your Best Skin<br />
+        <em>Is Just An</em><br />
+        Appointment Away
+      </h1>
+      <p class="hero__sub reveal-fade">
+        Personalized treatments crafted for your unique skin journey.<br />
+        Glow from within — naturally, safely, beautifully.
+      </p>
+      <div class="hero__actions reveal-up">
+        <a href="#booking" class="btn btn--primary">Book Appointment</a>
+        <a href="#services" class="btn btn--ghost">Explore Treatments</a>
+      </div>
+      <div class="hero__stats reveal-fade">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="2400">0</span><span>+</span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="5">0</span><span>★</span>
+          <p>Star Rated</p>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="30">0</span><span>+</span>
+          <p>Treatments</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__image-wrap reveal-right">
+      <div class="hero__image-ring hero__image-ring--outer"></div>
+      <div class="hero__image-ring hero__image-ring--inner"></div>
+      <div class="hero__image-placeholder">
+        <div class="hero__image-icon">✦</div>
+        <p>Luna Skin Clinic</p>
+      </div>
+      <div class="hero__floating-badge hero__floating-badge--1">
+        <span>✦</span> Glow Treatment
+      </div>
+      <div class="hero__floating-badge hero__floating-badge--2">
+        <span>☽</span> Lunar Facial
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ───────────── MARQUEE ───────────── -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Glow Baby Glow</span><span class="marquee-dot">✦</span>
+      <span>Hydration Boost</span><span class="marquee-dot">✦</span>
+      <span>Lunar Facial</span><span class="marquee-dot">✦</span>
+      <span>Skin Revival</span><span class="marquee-dot">✦</span>
+      <span>Acne Solutions</span><span class="marquee-dot">✦</span>
+      <span>Anti-Aging</span><span class="marquee-dot">✦</span>
+      <span>Brightening</span><span class="marquee-dot">✦</span>
+      <span>Deep Cleanse</span><span class="marquee-dot">✦</span>
+      <span>Glow Baby Glow</span><span class="marquee-dot">✦</span>
+      <span>Hydration Boost</span><span class="marquee-dot">✦</span>
+      <span>Lunar Facial</span><span class="marquee-dot">✦</span>
+      <span>Skin Revival</span><span class="marquee-dot">✦</span>
+      <span>Acne Solutions</span><span class="marquee-dot">✦</span>
+      <span>Anti-Aging</span><span class="marquee-dot">✦</span>
+      <span>Brightening</span><span class="marquee-dot">✦</span>
+      <span>Deep Cleanse</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ───────────── ABOUT ───────────── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual reveal-left">
+          <div class="about__visual-card about__visual-card--main">
+            <div class="about__visual-icon">☽</div>
+            <p class="about__visual-label">Luna Philosophy</p>
+            <p class="about__visual-desc">
+              Like the moon that lights up the darkest night, we illuminate your skin's natural beauty.
+            </p>
+          </div>
+          <div class="about__visual-card about__visual-card--accent">
+            <span class="about__visual-accent-icon">✦</span>
+            <p>100% Personalized</p>
+            <p class="about__visual-accent-sub">Every skin is unique</p>
+          </div>
+          <div class="about__visual-orb"></div>
+        </div>
+
+        <div class="about__copy reveal-right">
+          <p class="section__eyebrow">About Us</p>
+          <h2 class="section__title">We Believe<br /><em>Skin Transforms</em><br />Lives</h2>
+          <p class="about__para">
+            At Luna Skin Clinic, we are passionate about helping you achieve the radiant, healthy skin you deserve. Our team of expert aestheticians combines cutting-edge technology with personalized care, tailored to your unique skin type and goals.
+          </p>
+          <p class="about__para">
+            We don't believe in one-size-fits-all. Every visit begins with a thorough skin analysis so we can craft a treatment plan as individual as you are. Whether you're battling acne, seeking anti-aging solutions, or simply want to glow — we've got you.
+          </p>
+          <div class="about__pillars">
+            <div class="about__pillar">
+              <span class="about__pillar-icon">✦</span>
+              <div>
+                <strong>Expert Aestheticians</strong>
+                <p>Certified professionals with years of experience</p>
+              </div>
+            </div>
+            <div class="about__pillar">
+              <span class="about__pillar-icon">☽</span>
+              <div>
+                <strong>Premium Products</strong>
+                <p>Medical-grade formulations for real results</p>
+              </div>
+            </div>
+            <div class="about__pillar">
+              <span class="about__pillar-icon">◎</span>
+              <div>
+                <strong>Proven Results</strong>
+                <p>Visible improvements from the very first session</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── SERVICES ───────────── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__header reveal-fade">
+        <p class="section__eyebrow">Our Treatments</p>
+        <h2 class="section__title">Crafted for<br /><em>Every Skin Story</em></h2>
+        <p class="section__sub">From deep cleansing to advanced rejuvenation — we have the perfect treatment waiting for you.</p>
+      </div>
+
+      <div class="services__filter reveal-fade">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="facial">Facials</button>
+        <button class="filter-btn" data-filter="acne">Acne Care</button>
+        <button class="filter-btn" data-filter="antiaging">Anti-Aging</button>
+        <button class="filter-btn" data-filter="brightening">Brightening</button>
+      </div>
+
+      <div class="services__grid" id="servicesGrid">
+
+        <div class="service-card reveal-up" data-category="facial">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">☽</span></div>
+          <h3 class="service-card__title">Lunar Signature Facial</h3>
+          <p class="service-card__desc">Our flagship treatment — a deeply luxurious facial that combines cleansing, exfoliation, extraction, and a customized mask for your skin type.</p>
+          <ul class="service-card__features">
+            <li>Deep pore cleansing</li>
+            <li>Custom enzyme peel</li>
+            <li>LED light therapy</li>
+            <li>Hydrating mask infusion</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__duration">75 min</span>
+            <a href="#booking" class="service-card__cta">Book →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-category="acne">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">◎</span></div>
+          <h3 class="service-card__title">Acne Clear Program</h3>
+          <p class="service-card__desc">A comprehensive multi-step treatment designed to reduce breakouts, minimize pores, and restore your skin's natural clarity and confidence.</p>
+          <ul class="service-card__features">
+            <li>Salicylic acid exfoliation</li>
+            <li>Congestion extraction</li>
+            <li>Anti-bacterial serum</li>
+            <li>Calming clay therapy</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__duration">60 min</span>
+            <a href="#booking" class="service-card__cta">Book →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-category="antiaging">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">✦</span></div>
+          <h3 class="service-card__title">Youth Revival Treatment</h3>
+          <p class="service-card__desc">Turn back the clock with our advanced anti-aging protocol. Stimulates collagen production, firms the skin, and erases visible signs of aging.</p>
+          <ul class="service-card__features">
+            <li>Micro-current therapy</li>
+            <li>Retinol infusion</li>
+            <li>Collagen peptide mask</li>
+            <li>Firming massage</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__duration">90 min</span>
+            <a href="#booking" class="service-card__cta">Book →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-category="brightening">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">◈</span></div>
+          <h3 class="service-card__title">Glow Brightening Ritual</h3>
+          <p class="service-card__desc">Illuminate dull, uneven skin with our brightening ritual. Targets hyperpigmentation, dark spots, and uneven tone for a luminous complexion.</p>
+          <ul class="service-card__features">
+            <li>Vitamin C infusion</li>
+            <li>Kojic acid brightening peel</li>
+            <li>Niacinamide serum</li>
+            <li>Brightening jade massage</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__duration">70 min</span>
+            <a href="#booking" class="service-card__cta">Book →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-category="facial">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">⬡</span></div>
+          <h3 class="service-card__title">HydraGlow Facial</h3>
+          <p class="service-card__desc">Intense hydration therapy for dehydrated, stressed skin. Plumps, soothes, and restores moisture balance for a dewy, glass-skin finish.</p>
+          <ul class="service-card__features">
+            <li>Hyaluronic acid infusion</li>
+            <li>Oxygen therapy</li>
+            <li>Barrier repair serum</li>
+            <li>Cooling gel mask</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__duration">60 min</span>
+            <a href="#booking" class="service-card__cta">Book →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-category="brightening">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">❋</span></div>
+          <h3 class="service-card__title">Radiance Peel</h3>
+          <p class="service-card__desc">A professional chemical peel that gently resurfaces the skin, removing dead cells and revealing fresher, smoother, more youthful-looking skin beneath.</p>
+          <ul class="service-card__features">
+            <li>AHA/BHA blend peel</li>
+            <li>Neutralizing treatment</li>
+            <li>Post-peel recovery mask</li>
+            <li>SPF protection finish</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__duration">45 min</span>
+            <a href="#booking" class="service-card__cta">Book →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── PROCESS ───────────── -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section__header reveal-fade">
+        <p class="section__eyebrow">How It Works</p>
+        <h2 class="section__title">Your Journey<br /><em>to Glowing Skin</em></h2>
+      </div>
+      <div class="process__steps">
+        <div class="process__step reveal-up">
+          <div class="process__step-num">01</div>
+          <div class="process__step-line"></div>
+          <div class="process__step-body">
+            <span class="process__step-icon">☽</span>
+            <h3>Book Your Visit</h3>
+            <p>Slide into our DMs on Instagram or use our booking form below. We'll confirm your slot within 24 hours.</p>
+          </div>
+        </div>
+        <div class="process__step reveal-up">
+          <div class="process__step-num">02</div>
+          <div class="process__step-line"></div>
+          <div class="process__step-body">
+            <span class="process__step-icon">◎</span>
+            <h3>Skin Consultation</h3>
+            <p>Every client starts with a thorough skin analysis. We identify your skin type, concerns, and create a personalized treatment plan.</p>
+          </div>
+        </div>
+        <div class="process__step reveal-up">
+          <div class="process__step-num">03</div>
+          <div class="process__step-line"></div>
+          <div class="process__step-body">
+            <span class="process__step-icon">✦</span>
+            <h3>Your Treatment</h3>
+            <p>Relax and let our expert aestheticians work their magic. Every treatment is performed with precision and care.</p>
+          </div>
+        </div>
+        <div class="process__step reveal-up">
+          <div class="process__step-num">04</div>
+          <div class="process__step-body">
+            <span class="process__step-icon">❋</span>
+            <h3>Glow & Go</h3>
+            <p>Leave with visibly radiant skin and a personalized aftercare routine to maintain and enhance your results at home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── GALLERY ───────────── -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__header reveal-fade">
+        <p class="section__eyebrow">Results Gallery</p>
+        <h2 class="section__title">The Luna<br /><em>Glow Effect</em></h2>
+        <p class="section__sub">Real clients, real transformations. See what consistent, personalized care can do.</p>
+      </div>
+      <div class="gallery__grid reveal-up">
+        <div class="gallery-card gallery-card--tall">
+          <div class="gallery-card__inner">
+            <span class="gallery-card__icon">☽</span>
+            <p>Hydration Glow</p>
+            <span class="gallery-card__tag">Before → After</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-card__inner">
+            <span class="gallery-card__icon">✦</span>
+            <p>Acne Clear</p>
+            <span class="gallery-card__tag">3 Sessions</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-card__inner">
+            <span class="gallery-card__icon">◎</span>
+            <p>Brightening</p>
+            <span class="gallery-card__tag">Before → After</span>
+          </div>
+        </div>
+        <div class="gallery-card gallery-card--wide">
+          <div class="gallery-card__inner">
+            <span class="gallery-card__icon">◈</span>
+            <p>Youth Revival</p>
+            <span class="gallery-card__tag">6 Week Program</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-card__inner">
+            <span class="gallery-card__icon">❋</span>
+            <p>Radiance Peel</p>
+            <span class="gallery-card__tag">Before → After</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── TESTIMONIALS ───────────── -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section__header reveal-fade">
+        <p class="section__eyebrow">Client Love</p>
+        <h2 class="section__title">What Our<br /><em>Clients Say</em></h2>
+      </div>
+
+      <div class="testimonials__slider" id="testimonialSlider">
+        <div class="testimonial-card testimonial-card--active">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"I've been coming to Luna Skin Clinic for 6 months and my skin has never looked better. The Lunar Signature Facial is absolutely life-changing. My confidence has skyrocketed!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">A</div>
+            <div>
+              <strong>Andrea M.</strong>
+              <span>Loyal Client · Hydra Glow Facial</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"Finally found a place that actually listened to my skin concerns! The Acne Clear Program cleared my stubborn breakouts in just 3 sessions. I literally cried happy tears!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">J</div>
+            <div>
+              <strong>Jasmine R.</strong>
+              <span>Loyal Client · Acne Clear Program</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"The team at Luna Skin is so professional and knowledgeable. They recommended the Youth Revival treatment for me and I look 10 years younger. Worth every penny!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">S</div>
+            <div>
+              <strong>Sandra K.</strong>
+              <span>Loyal Client · Youth Revival</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"Booked through Instagram DM and the process was so smooth! From consultation to treatment, Luna Skin made me feel like royalty. My skin GLOWS now. Let's go baby! ❤️‍🔥"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">M</div>
+            <div>
+              <strong>Mia T.</strong>
+              <span>New Client · Glow Brightening Ritual</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__controls">
+        <button class="testimonial-prev" id="testimonialPrev" aria-label="Previous">←</button>
+        <div class="testimonials__dots" id="testimonialDots"></div>
+        <button class="testimonial-next" id="testimonialNext" aria-label="Next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── BOOKING / CONTACT ───────────── -->
+  <section class="booking section" id="booking">
+    <div class="container">
+      <div class="booking__grid">
+        <div class="booking__info reveal-left">
+          <p class="section__eyebrow">Book Your Glow</p>
+          <h2 class="section__title">Ready to<br /><em>Start Glowing?</em></h2>
+          <p class="booking__info-para">
+            Fill in the form and we'll confirm your appointment within 24 hours. You can also DM us on Instagram for a faster response!
+          </p>
+          <div class="booking__contact-items">
+            <div class="booking__contact-item">
+              <span class="booking__contact-icon">☽</span>
+              <div>
+                <strong>Instagram DM</strong>
+                <a href="https://www.instagram.com/lunaskinbp" target="_blank">@lunaskinbp</a>
+              </div>
+            </div>
+            <div class="booking__contact-item">
+              <span class="booking__contact-icon">✦</span>
+              <div>
+                <strong>TikTok</strong>
+                <span>@lunaskinbp</span>
+              </div>
+            </div>
+            <div class="booking__contact-item">
+              <span class="booking__contact-icon">◎</span>
+              <div>
+                <strong>Opening Hours</strong>
+                <span>Mon – Sat: 9AM – 7PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking__form-wrap reveal-right" id="contact">
+          <form class="booking__form" id="bookingForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" />
+            </div>
+            <div class="form-group">
+              <label for="treatment">Treatment of Interest</label>
+              <select id="treatment" name="treatment" required>
+                <option value="" disabled selected>Select a treatment</option>
+                <option value="lunar-facial">Lunar Signature Facial</option>
+                <option value="acne-clear">Acne Clear Program</option>
+                <option value="youth-revival">Youth Revival Treatment</option>
+                <option value="glow-brightening">Glow Brightening Ritual</option>
+                <option value="hydra-glow">HydraGlow Facial</option>
+                <option value="radiance-peel">Radiance Peel</option>
+                <option value="consultation">Just a Consultation</option>
+              </select>
+              <span class="form-error" id="treatmentError"></span>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+              <span class="form-error" id="dateError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Skin</label>
+              <textarea id="message" name="message" rows="4" placeholder="Any concerns, skin conditions, or goals you'd like us to know..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Book Appointment ✦</button>
+            <div class="form-success" id="formSuccess">
+              ☽ Thank you! We'll confirm your appointment within 24 hours. Let's glow! ❤️‍🔥
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── FOOTER ───────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-moon">☽</span>
+            <span>Luna Skin Clinic</span>
+          </div>
+          <p class="footer__tagline">Your best skin is just an appointment away. Let's glow, baby! ❤️‍🔥</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/lunaskinbp" target="_blank" class="footer__social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05A6.34 6.34 0 003.15 15.3 6.34 6.34 0 009.49 21.6a6.34 6.34 0 006.34-6.34v-6.9a8.23 8.23 0 004.8 1.54V6.47a4.86 4.86 0 01-1.04.22z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links-group">
+          <h4>Treatments</h4>
+          <ul>
+            <li><a href="#services">Lunar Signature Facial</a></li>
+            <li><a href="#services">Acne Clear Program</a></li>
+            <li><a href="#services">Youth Revival</a></li>
+            <li><a href="#services">Glow Brightening</a></li>
+            <li><a href="#services">HydraGlow Facial</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-group">
+          <h4>Clinic</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#gallery">Results Gallery</a></li>
+            <li><a href="#testimonials">Client Reviews</a></li>
+            <li><a href="#booking">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-group">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/lunaskinbp" target="_blank">Instagram @lunaskinbp</a></li>
+            <li><a href="#">TikTok @lunaskinbp</a></li>
+            <li><a href="#booking">DM for Booking</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Luna Skin Clinic. All rights reserved.</p>
+        <p>Made with ☽ for glowing skin</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
